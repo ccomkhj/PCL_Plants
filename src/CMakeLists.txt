@@ -2,7 +2,8 @@ cmake_minimum_required( VERSION 2.8 )
 
 # Create Project
 project(hexa)
-add_executable( ${PROJECT_NAME} hull.cpp )
+add_executable( ${PROJECT_NAME} main.cpp )
+
 
 # Set StartUp Project (Option)
 # (This setting is able to enable by using CMake 3.6.0 RC1 or later.)
@@ -20,7 +21,7 @@ if( PCL_FOUND )
   add_definitions( ${PCL_DEFINITIONS} )
   
   # For Use Not PreCompiled Features 
-  #add_definitions( -DPCL_NO_PRECOMPILE )
+  # add_definitions( -DPCL_NO_PRECOMPILE )
 
   # [Linker]>[General]>[Additional Library Directories]
   link_directories( ${PCL_LIBRARY_DIRS} )
