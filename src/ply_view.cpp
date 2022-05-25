@@ -12,7 +12,7 @@
 int main(int argc, char **argv)
 {
     // Fetch point cloud filename in arguments | Works with PLY files
-    std::string filename = "/home/hexaburbach/codes/point_cloud/burbach_farm.ply";
+    std::string filename = "/home/hexaburbach/codes/point_cloud/data/burbach_farm.ply";
 
     // Load file | Works with PLY files
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr source_cloud (new pcl::PointCloud<pcl::PointXYZRGB>());

@@ -11,7 +11,7 @@
 
 int main(){
     pcl::PointCloud<pcl::PointXYZRGB>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZRGB>);
-    if ( pcl::io::loadPCDFile <pcl::PointXYZRGB> ("/home/hexaburbach/codes/point_cloud/burbach_farm.pcd", *cloud) == -1)
+    if ( pcl::io::loadPCDFile <pcl::PointXYZRGB> ("/home/hexaburbach/codes/point_cloud/data/burbach_farm.pcd", *cloud) == -1)
     {
         std::cout << "Cloud reading failed." << std::endl;
         return (-1);
